@@ -1,0 +1,28 @@
+<plugin
+		id="com.vp.plugin.sample.objectdiagram"
+		description="Create Object Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.objectdiagram.ObjectDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.objectdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.objectdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.objectdiagram.actionset1.ObjectDiagramActionControl"
+					actionType="generalAction"
+					label="Object Diagram"
+					tooltip="Create Object Diagram"
+					style="normal"
+          icon="icons/icon.png"
+					toolbarPath="com.vp.plugin.sample.objectdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.objectdiagram.actions.ObjectDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
